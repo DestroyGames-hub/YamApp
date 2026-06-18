@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Yam</string>
+    <string name="title_activity_main">Yam</string>
+    <string name="package_name">com.destroystudios.yam</string>
+    <string name="custom_url_scheme">com.destroystudios.yam</string>
+</resources>

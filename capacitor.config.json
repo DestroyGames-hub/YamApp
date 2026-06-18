@@ -1,0 +1,9 @@
+{
+  "appId": "com.destroystudios.yam",
+  "appName": "Yam",
+  "webDir": "www",
+  "server": {
+    "url": "https://yamturkiye.web.app",
+    "cleartext": true
+  }
+}

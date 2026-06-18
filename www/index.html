@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><title>Yam</title></head><body><h1>Yam Yukleniyor...</h1><script>
+  document.addEventListener('deviceready', () => {
+    // Uygulama arka plana geçtiğinde sistemi uyanık tutar
+    if (window.Capacitor && window.Capacitor.Plugins.BackgroundTask) {
+      const BackgroundTask = window.Capacitor.Plugins.BackgroundTask;
+      
+      let taskId = BackgroundTask.beforeExit(async () => {
+        // Sistem arkada 7/24 çalışırken dönmesini istediğin minimum lojik
+        // OneSignal zaten arkada push notification dinlemeye devam edecek
+        BackgroundTask.finish({ taskId });
+      });
+    }
+  }, false);
+</script></body></html> 
